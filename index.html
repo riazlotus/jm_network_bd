@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JM Network BD | Premium Networking Solutions</title>
-    <link rel="icon" type="image/png" href="logo.png">
+    <title>JM Network BD</title>
+    <link rel="icon" type="image/png" href="logo2.jpeg">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <style>
         :root {
@@ -309,6 +309,16 @@
             width: 30px;
         }
 
+        .info-link-item a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .info-link-item a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
         /* Footer */
         footer {
             background: var(--dark);
@@ -351,8 +361,8 @@
     <header>
         <div class="nav-container">
             <a class="logo" onclick="switchPage('home')">
-                <i class="fas fa-network-wired"></i> JM Network BD
-            </a>
+    <img src="logo2.jpeg" alt="Logo" style="height: 35px; width: auto; object-fit: contain;"> JM Network BD
+</a>
             <nav>
                 <a id="nav-home" class="active" onclick="switchPage('home')">Home</a>
                 <a id="nav-shop" onclick="switchPage('shop')">Shop</a>
@@ -414,15 +424,21 @@
                     </div>
                 </div>
                 <div class="info-link-item">
+                    <i class="fab fa-facebook"></i>
+                    <div>
+                        <strong>Facebook Page</strong><br><a href="https://www.facebook.com/profile.php?id=61567021566276" target="_blank">JM Network BD</a>
+                    </div>
+                </div>
+                <div class="info-link-item">
                     <i class="fas fa-envelope"></i>
                     <div>
-                        <strong>Email Enquiries</strong><br>info.jmnetworkbd@gmail.com
+                        <strong>Email Enquiries</strong><br><a href="mailto:info.jmnetworkbd@gmail.com">info.jmnetworkbd@gmail.com</a>
                     </div>
                 </div>
                 <div class="info-link-item">
                     <i class="fas fa-phone-alt"></i>
                     <div>
-                        <strong>Direct Line</strong><br>01612470476
+                        <strong>Direct Line</strong><br><a href="tel:01612470476">01612470476</a>
                     </div>
                 </div>
             </div>
@@ -461,14 +477,14 @@
 
     <script>
         const products = [
-            { id: 1, category: 'Router', name: 'Mercusys MR325 Router', price: 1260, hasPrice: true, img: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=500&q=80' },
-            { id: 2, category: 'Router', name: 'TP-Link Archer C54 Router', price: 2290, hasPrice: true, img: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=500&q=80' },
-            { id: 3, category: 'Router', name: 'TP-Link Archer C64 Router', price: 2990, hasPrice: true, img: 'https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=500&q=80' },
-            { id: 4, category: 'Router', name: 'TP-Link Archer C6 Router', price: 3290, hasPrice: true, img: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=500&q=80' },
-            { id: 5, category: 'ONU / XPON', name: 'Premium ONU Unit', price: 0, hasPrice: false, img: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=500&q=80' },
-            { id: 6, category: 'ONU / XPON', name: 'High-Performance XPON Unit', price: 0, hasPrice: false, img: 'https://images.unsplash.com/photo-1562408590-e32931084e23?auto=format&fit=crop&w=500&q=80' },
-            { id: 7, category: 'Switches', name: 'Gigabit Network Switch', price: 0, hasPrice: false, img: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=500&q=80' },
-            { id: 8, category: 'Fiber Accessories', name: 'FTTH Fiber Patch Cord & Accessories', price: 0, hasPrice: false, img: 'https://images.unsplash.com/photo-1501621965065-c6e1cf6b53e2?auto=format&fit=crop&w=500&q=80' }
+            { id: 1, category: 'Router', name: 'Mercusys MR325 Router', price: 1260, hasPrice: true, img: 'mr325.webp' },
+            { id: 2, category: 'Router', name: 'TP-Link Archer C54 Router', price: 2290, hasPrice: true, img: 'c54.jpeg' },
+            { id: 3, category: 'Router', name: 'TP-Link Archer C64 Router', price: 2990, hasPrice: true, img: 'c64.jpg' },
+            { id: 4, category: 'Router', name: 'TP-Link Archer C6 Router', price: 3290, hasPrice: true, img: 'c6.webp' },
+            { id: 5, category: 'ONU / XPON', name: 'Premium ONU Unit', price: 0, hasPrice: false, img: 'uno2.jpeg' },
+            { id: 6, category: 'ONU / XPON', name: 'High-Performance XPON Unit', price: 0, hasPrice: false, img: 'xpon.webp' },
+            { id: 7, category: 'Switches', name: 'Gigabit Network Switch', price: 0, hasPrice: false, img: 'switch.webp' },
+            { id: 8, category: 'Fiber Accessories', name: 'FTTH Fiber Patch Cord & Accessories', price: 0, hasPrice: false, img: 'fiver.jpg' }
         ];
 
         function switchPage(pageId) {
